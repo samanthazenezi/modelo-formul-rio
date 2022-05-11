@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <h1 id="titulo">Cadastro</h1>
+    <p id="sub">Complete suas informções</p>
+    <br>
+
+    <form>
+        <fieldset class="grupo">
+            <div>
+                <label for="nome"><strong>Nome</strong></label>
+                <input type="text" name="Nome" id="Nome" required>
+            </div>
+            <div>
+                <label for="sobrenome"><strong>Sobrenome</strong></label>
+                <input type="text" name="Sobrenome" id="Sobrenome" required>
+            </div>
+        </fieldset>
+        <div class="campo">
+            <label><strong>E-mail</strong></label>
+            <input type="email" name="E-mail" id="E-mail" required>
+        </div>
+        <div class="campo">
+            <label><strong>Qual trabalho vai ser feito no veículo?</strong></label>
+            <label>
+                <input type="radio" name="pneu" value="trocapneu">Troca pneu
+                <input type="radio" name="cambio" value="trocadecambio">Troca de cambio
+                <input type="radio" name="eixotraseiro" value="ajusteeixo">Ajuste eixo traseiro
+            </label>
+        </div>
+        <div class="campo">
+            <label><strong>Forma de pagamento</strong></label>
+            <select id="formadepagamento">
+                <option selected disabled value="">Selecione uma opção</option>
+                <option>Cartão de crédio</option>
+                <option>Cartão de debito</option>
+                <option>Boleto</option>
+                <option>Pix</option>
+            </select>
+        </div>
+        <div class="check">
+        <fieldset class="grupo">
+            <label><strong>Indique o mecânico do serviço</strong></label><br><br>
+            <input type="checkbox" id="joão" name="joão" value="mecanico">
+            <label for="joão">João</label>
+            <input type="checkbox" id="sandro" name="sandro" value="mecanico">
+            <label for="sandro">Sandro</label>
+            <input type="checkbox" id="gusto" name="gusto" value="mecanico">
+            <label for="gusto">Augusto</label>
+        </fieldset>
+        <div>
+        <div class="campo">
+            <label><strong>Descreva os serviços realizados na OS:</strong></label>
+            <textarea rows="10" style="width: 50em;" id="serv" name="serv"></textarea>
+        </div>
+        <button type="submit" class="botão"><strong>Concluido</strong></button>
+    </form>
+</body>
+</html>
